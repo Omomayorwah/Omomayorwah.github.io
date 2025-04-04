@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and page settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/style.css">
+</head>
+<body id="home">
+    <!-- Header section -->
+    <header>
+        <nav>
+            <!-- Logo linking to the homepage -->
+            <a href="index.html"><img id="logo" src="Images/logo.jpeg" alt="logo image"></a>
+            <!-- Navigation links -->
+            <a id="nav" href="about.html">About</a>
+            <a id="nav" href="skills.html">Skills</a>
+            <a id="nav" href="projects.html">Projects</a>
+            <a id="nav" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Main content section -->
+        <section class="home">
+            <h1 id="heading">DESIGN.<br>.SECURE</h1>
+            <p>Hello, my name is Akintunde Ajayi.<br> 
+                I'm a Software Engineer and a Cybersecurity Specialist.<br>
+                Check out my different <a id="text" href="skills.html">skill-sets</a>.<br>
+                Feel free to take a look at my latest <a id="text" href="projects.html">projects</a>.<br>
+                I'm available for both remote and on-site jobs.<br> kintunde2010@gmail.com</p>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuIcon = document.createElement("div");
+            menuIcon.classList.add("menu-icon");
+            menuIcon.innerHTML = "&#9776;"; // Hamburger menu icon
+        
+            const nav = document.querySelector("nav");
+            nav.insertBefore(menuIcon, nav.firstChild);
+        
+            menuIcon.addEventListener("click", function() {
+                nav.classList.toggle("nav-active");
+            });
+        });
+        </script>        
+</body>
+</html>

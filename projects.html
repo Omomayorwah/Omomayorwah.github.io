@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and page settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/style.css">
+</head>
+<body id="projects">
+    <!-- Header section -->
+    <header>
+        <nav>
+            <!-- Logo linking to the homepage -->
+            <a href="index.html"><img id="logo" src="Images/logo.jpeg" alt="logo image"></a>
+            <!-- Navigation links -->
+            <a id="nav" href="about.html">About</a>
+            <a id="nav" href="skills.html">Skills</a>
+            <a id="nav" href="projects.html">Projects</a>
+            <a id="nav" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="project-main">
+        <!-- Main content section -->
+        <section class="documentation">
+        <h2>Documentations</h2>
+        <div class="doc">
+            <a href="https://drive.google.com/file/d/1WXjfrhh_5_r8R5g83-wysqCa-4UJU3yU/view?usp=drive_link" target="_blank"> <img src="Images/audit.JPG" alt="an image representing security audit documentation" width="200"> A Security Audit Report</a>
+        </div>
+        <div class="doc">
+            <a href="https://drive.google.com/file/d/1BYGKjp7WdUcvlKvssTm6Y3c41aLDcxY4/view?usp=drive_link" target="_blank"><img src="Images/compliance.JPG" alt="an image representing security standards analysis documentation" width="200"> A Comprehensive Analysis of Cybersecurity standards</a>
+        </div>
+        <div class="doc">
+            <a href="https://drive.google.com/file/d/1Q32iqa8HL1mNpQac0YRwZTGvv-DhDz6C/view?usp=drive_link" target="_blank"><img src="Images/vulnerability.JPG" alt="an image representing ZAP vulnerability scan report documentation" width="200"> An Application Vulnerability Scan Report</a>
+        </div>
+        </section>
+        <section class="labs">
+            <h2>Labs</h2>
+            <div class="lab">
+                <a href="https://docs.google.com/document/d/17mrUlgIKDq4xUdIA_y3H59w1UiuUMpAK/edit?usp=drive_link&ouid=101290393293610236372&rtpof=true&sd=true" target="_blank"><img src="Images/signature.JPG" alt="an image representing a digital signature lab" width="200"> Digital Signature Lab</a>
+            </div>
+            <div class="lab">
+                <a href="https://drive.google.com/file/d/1IHsWDzLy4SUXEnpo5R3GkZD9UCdeBr5z/view?usp=drive_link" target="_blank"><img src="Images/network.jpeg" alt="an image representing a network segmentation lab" width="200"> Network Segmentation (VLAN) Lab</a>
+            </div>
+            <div class="lab">
+                <a href="https://github.com/PLP-Database-Design/plp-database-module-2025-wk-2a-psd-02" target="_blank"><img src="Images/database.jpeg" alt="an image representing a database administration lab" width="200"> A Database Administration Github Repository</a>
+            </div>
+            <div class="lab">
+                <a href="https://github.com/Omomayorwah/python-w3-ass.git" target="_blank"><img src="Images/python.jpeg" alt="an image representing a python functions lab" width="200"> A Python Function Lab</a>
+            </div>
+        </section>
+    </main>
+    <a href="index.html" style="text-decoration: none; color: whitesmoke; background: #707070; padding: 5px; margin-left: 80%;">--home</a>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuIcon = document.createElement("div");
+            menuIcon.classList.add("menu-icon");
+            menuIcon.innerHTML = "&#9776;"; // Hamburger menu icon
+        
+            const nav = document.querySelector("nav");
+            nav.insertBefore(menuIcon, nav.firstChild);
+        
+            menuIcon.addEventListener("click", function() {
+                nav.classList.toggle("nav-active");
+            });
+        });
+        </script>        
+</body>
+</html>

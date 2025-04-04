@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and page settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/style.css">
+</head>
+<body id="skills">
+    <!-- Header section -->
+    <header>
+        <nav>
+            <!-- Logo linking to the homepage -->
+            <a href="index.html"><img id="logo" src="Images/logo.jpeg" alt="logo image"></a>
+            <!-- Navigation links -->
+            <a id="nav" href="about.html">About</a>
+            <a id="nav" href="skills.html">Skills</a>
+            <a id="nav" href="projects.html">Projects</a>
+            <a id="nav" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="s-main">
+        <!-- Main content section -->
+        <section class="skills">
+            <p id="skill-sets">The following are lists of my skill-sets:</p>
+            <fieldset class="fieldset">
+                <legend class="legend">Software Engineering</legend>
+                <ul>
+                    <li>Source Control</li>
+                    <li>Testing</li>
+                    <li>Debugging</li>
+                    <li>Object-Oriented Design</li>
+                    <li>Web Development</li>
+                    <li>Data Structure and Algorithm</li>
+                    <li>Database Administration</li>
+                </ul>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legend">Cybersecurity</legend>
+                <ul>
+                    <li>Network Security</li>
+                    <li>Cloud Security</li>
+                    <li>Encryption and Cryptography</li>
+                    <li>Identity and Access Management</li>
+                    <li>Application Security</li>
+                    <li>Penetration Testing</li>
+                    <li>Incident Response</li>
+                    <li>Vulnerability Assessment</li>
+                    <li>Security Audit and Compliance</li> 
+                </ul>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legend">Soft Skills</legend>
+                <ul>
+                    <li>Communication</li>
+                    <li>Adaptability</li>
+                    <li>Time Management</li>
+                    <li>Advance Analytical Thinking</li>
+                    <li>Risk Assessment and Management</li>
+                </ul>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legend">Programming Language</legend>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legend">Frameworks</legend>
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Django</li>
+                    <li>Flutter</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>NIST</li>
+                    <li>OWASP</li>
+                    <li>ISO 27001</li>
+                    <li>GDPR</li>
+                    <li>PCI DSS</li>
+                    <li>HIPAA</li>
+                </ul>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legend">Tools</legend>
+                <ul>
+                    <li>Git</li>
+                    <li>Jira</li>
+                    <li>VS code</li>
+                    <li>Github</li>
+                    <li>mySQL Workbench</li>
+                    <li>Burp Suite</li>
+                    <li>Wireshark</li>
+                    <li>Nessus</li>
+                    <li>Kali Linux</li>
+                    <li>Nmap</li>
+                    <li>Metasploit</li>
+                    <li>Splunk</li>
+                    <li>Snort</li>
+                </ul>
+            </fieldset>
+        </section>
+    </main>
+    <a href="index.html" style="text-decoration: none; color: whitesmoke; background: #707070; padding: 5px; margin-left: 80%;">--home</a>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuIcon = document.createElement("div");
+            menuIcon.classList.add("menu-icon");
+            menuIcon.innerHTML = "&#9776;"; // Hamburger menu icon
+        
+            const nav = document.querySelector("nav");
+            nav.insertBefore(menuIcon, nav.firstChild);
+        
+            menuIcon.addEventListener("click", function() {
+                nav.classList.toggle("nav-active");
+            });
+        });
+        </script>        
+</body>
+</html>
